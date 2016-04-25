@@ -24,7 +24,7 @@ func main() {
 func ipaddys() {
 	addrs, err := net.InterfaceAddrs()
 	if err != nil {
-		os.Stderr.WriteString("Oops: " + err.Error() + "\n")
+		os.Stderr.WriteString("Error obtaining addresses: " + err.Error() + "\n")
 		os.Exit(1)
 	}
 
