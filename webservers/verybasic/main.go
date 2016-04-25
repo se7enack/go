@@ -19,7 +19,6 @@ func main() {
 	fmt.Println("127.0.0.1")
 	ipaddys()
 	log.Fatal(http.ListenAndServe(":9000", nil))
-
 }
 
 func ipaddys() {
