@@ -9,7 +9,7 @@ import (
 
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "Hello, %q", html.EscapeString(r.URL.Path))
+		fmt.Fprintf(w, "This webserver is running. You are currently in %q.", html.EscapeString(r.URL.Path))
 	})
 
 	fmt.Println("Webserver running on port 9000")
