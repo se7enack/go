@@ -13,7 +13,7 @@ func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, "This webserver is running. You are currently in %q.", html.EscapeString(r.URL.Path))
 	})
-
+	print("\033[H\033[2J")
 	fmt.Println("\nWebserver running on port 9000 \n")
 	fmt.Println("The IP addresses are: ")
 	fmt.Println("127.0.0.1")
