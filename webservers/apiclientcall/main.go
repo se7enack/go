@@ -6,10 +6,10 @@ import (
 )
 
 type respStruct struct {
-	Id int
-	Name  string
+	Id        int
+	Name      string
 	Completed bool
-	Due string
+	Due       string
 }
 
 func main() {
