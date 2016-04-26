@@ -6,7 +6,6 @@ import (
 )
 
 type respStruct struct {
-	Id    int
 	Name  string
 	Completed bool
 }
