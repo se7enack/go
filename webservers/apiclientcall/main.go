@@ -4,10 +4,12 @@ import (
 	"fmt"
 	"github.com/bndr/gopencils"
 )
-#SJB
+
 type respStruct struct {
+	Id int
 	Name  string
 	Completed bool
+	Due string
 }
 
 func main() {
