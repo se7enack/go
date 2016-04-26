@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"github.com/bndr/gopencils"
 )
-
+#SJB
 type respStruct struct {
 	Name  string
 	Completed bool
