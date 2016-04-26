@@ -22,7 +22,7 @@ func main() {
 
 	router := NewRouter()
 	print("\033[H\033[2J")
-	fmt.Println("\nWebserver running on port 9000 \n")
+	fmt.Println("\nWebserver running on port 9000\n")
 	fmt.Println("The IP addresses are: ")
 	fmt.Println("127.0.0.1")
 	ipaddys()
