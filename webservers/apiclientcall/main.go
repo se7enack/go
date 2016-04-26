@@ -15,7 +15,6 @@ type respStruct struct {
 func main() {
 	api := gopencils.Api("http://localhost:9000")
 	jobs := api.Res("jobs")
-
 	id := []string{"1"}
 
 	for _, username := range id {

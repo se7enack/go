@@ -147,7 +147,6 @@ func RepoFindJob(id int) Job {
 			return t
 		}
 	}
-	// return empty Job if not found
 	return Job{}
 }
 
