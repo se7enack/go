@@ -19,7 +19,6 @@ curl -H "Content-Type: application/json" -d '{"name":"New Job"}' http://localhos
 */
 
 func main() {
-
 	router := NewRouter()
 	print("\033[H\033[2J")
 	fmt.Println("\nWebserver running on port 9000\n")
@@ -217,7 +216,7 @@ type Job struct {
 	Id        int       `json:"id"`
 	Name      string    `json:"name"`
 	Completed bool      `json:"completed"`
-	Due       time.Time `json:"due"`
+	Due       time.Time 	`json:"due"`
 }
 
 type Jobs []Job
