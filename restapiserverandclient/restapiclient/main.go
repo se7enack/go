@@ -5,7 +5,7 @@ import (
 	"github.com/bndr/gopencils"
 )
 
-type respStruct struct {
+type fieldStructure struct {
 	Id        int
 	Name      string
 	Completed bool
@@ -17,9 +17,9 @@ func main() {
 	jobs := api.Res("jobs")
 	id := []string{"1"}
 
-	for _, username := range id {
-		r := new(respStruct)
-		_, err := jobs.Id(username, r).Get()
+	for _, x := range id {
+		r := new(fieldStructure)
+		_, err := jobs.Id(x, r).Get()
 		if err != nil {
 			fmt.Println(err)
 		} else {
