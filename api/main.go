@@ -16,7 +16,7 @@ func main() {
 	// Users Resource
 	users := api.Res("users")
 
-	usernames := []string{"se7enack", "dangerousness"}
+	usernames := []string{"se7enack", "vzburke"}
 
 	for _, username := range usernames {
 		// Create a new pointer to response struct

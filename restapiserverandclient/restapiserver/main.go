@@ -54,7 +54,7 @@ type jsonErr struct {
 }
 
 func Index(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprint(w, "Runni!\n")
+	fmt.Fprint(w, "Running!\n")
 }
 
 func JobIndex(w http.ResponseWriter, r *http.Request) {
